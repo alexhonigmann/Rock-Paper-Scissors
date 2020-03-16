@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+.app{
+    width:100%;
+    height: 100vh;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.rounds-block{
+    width:30%;
+    height: 20vh;
+    border: 1px solid white;
+    text-align: center;
+}
+
+.rounds-heading{
+    text-align: center;
+    margin-bottom: 7vh;
+    margin-top: 20px;
+}
+
+.rounds-options{
+    width:70%;
+    display: flex;
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 5vw;
+}
+
+.rounds-result{
+    display: flex;
+    font-size: 40px;
+    justify-content: center;
+    opacity: 0;
+}
+
+.result-block{
+    display: flex;
+    width:30%;
+    height: 10vh;
+    justify-content: space-around;
+    border: 3px solid white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-block{
+    width:30%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    font-size: 50px;
+}
+
+.icon{
+    width:90px;
+    height: 90px;
+    text-align: center;
+}
+
+.far{
+    padding: 15px 20px; 
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+#btn {
+    color: rgb(161, 86, 86);
+    background-color: black;
+    border: none;
+    font-size: 3em;
+    text-decoration: underline;
+}
+#btn:hover{
+    color: white;
+}
+
+.result-block p:nth-of-type(2),.result-block p:nth-of-type(3),.result-block p:nth-of-type(4){
+    margin-top: 25px;
+}
+
+.win {
+    border: 2px solid green; 
+    border-radius: 50%;
+    background-color: rgba(0, 128, 0, 0.399);
+}
+
+.lose {
+    border: 2px solid red;
+    border-radius: 50%;
+    background-color: rgba(255, 0, 0, 0.44);
+}
+
+.equal {
+    border: 2px solid yellow;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 0, 0.349);
+}
+
+.user-box{
+    padding: 20px;
+    background-color: red;
+    margin: 8px 0 8px -40px;
+}
+.comp-box{
+    padding: 20px;
+    background-color: red;
+    
+    margin: 8px -40px 8px 0;
+}
+.comp-box p{
+   margin-top: 3px;
+}
+.user-box p{
+    margin-top: 3px;
+}
